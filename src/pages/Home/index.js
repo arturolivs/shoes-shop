@@ -20,7 +20,7 @@ function Home({ dispatch }) {
       setProducts(data);
     }
     loadProducts();
-  });
+  }, []);
 
   function handleAddProduct(product) {
     dispatch({
